@@ -1,11 +1,10 @@
-    function makeArray(firstArray, secondArray, maxLength = 0) {
+    function makeArray(firstArray, secondArray, maxLength) {
   
       let totalmakearray = firstArray.concat(secondArray);
-      if (totalmakearray.length = maxLength) {
-        return totalmakearray;
+      if (totalmakearray.length > maxLength) {
+        return totalmakearray.slice(0, maxLength);
       } else {
-      
-      return [];
+      return totalmakearray;
       }
       }
     
